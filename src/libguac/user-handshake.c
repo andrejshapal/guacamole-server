@@ -344,7 +344,7 @@ int guac_user_handle_connection(guac_user* user, int usec_timeout) {
     else {
 
         guac_client_log(client, GUAC_LOG_INFO, "User \"%s\" (%s) joined connection "
-                "\"%s\" (%i users now present)", user->user_id, user->info.name
+                "\"%s\" (%i users now present)", user->user_id, user->info.name,
                 client->connection_id, client->connected_users);
         if (strcmp(parser->argv[0],"") != 0) {
             guac_client_log(client, GUAC_LOG_DEBUG, "Client is using protocol "
